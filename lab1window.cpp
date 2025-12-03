@@ -1,6 +1,6 @@
 #include "lab1window.h"
 #include "ui_lab1window.h"
-#include <cmath> // Для математичних функцій (якщо знадобляться)
+#include <cmath> 
 
 Lab1Window::Lab1Window(QWidget *parent) :
     QWidget(parent),

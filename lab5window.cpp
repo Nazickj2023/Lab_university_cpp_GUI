@@ -60,7 +60,7 @@ Lab5window::~Lab5window()
 }
 
 // Кнопка конвертації (Task 2)
-void Lab5window::on_btnConvert_clicked() // Перевір назву кнопки (btnConvert)
+void Lab5window::on_btnConvert_clicked() 
 {
     int val = ui->spinNum->value(); // Отримуємо число
     QString roman = arabicToRoman(val); // Викликаємо НАШУ функцію
