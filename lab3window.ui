@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lab3Window</class>
+ <widget class="QWidget" name="Lab3Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #2b2b2b;
+    color: white;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+}
+QLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b388ff; /* Фіолетовий акцент для 3-ї лаби */
+    padding: 10px;
+    border-bottom: 2px solid #b388ff;
+    margin-bottom: 20px;
+}
+QPushButton {
+    background-color: #6200ea; /* Темно-фіолетові кнопки */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 6px;
+    border: 1px solid #7c43bd;
+    min-width: 150px;
+    min-height: 30px;
+}
+QPushButton:hover {
+    background-color: #7c43bd;
+}
+QPushButton:pressed {
+    background-color: #311b92;
+    padding-top: 8px;
+    padding-left: 8px;
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>381</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Лабораторна робота №3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Завдання 2: перевірка паліндрому.</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Завдання 16: сума НСК для чисел від 1 до n.</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

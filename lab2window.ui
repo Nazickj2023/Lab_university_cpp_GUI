@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lab2Window</class>
+ <widget class="QWidget" name="Lab2Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>401</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- ЗАГАЛЬНИЙ ФОН ВІКНА --- */
+QWidget {
+    background-color: #2b2b2b; /* Темно-сірий фон */
+    color: white;              /* Білий текст */
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+}
+
+/* --- СТИЛЬ ЗАГОЛОВКА (Label) --- */
+QLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4fc3f7; /* Світло-блакитний колір заголовка */
+    padding: 10px;
+    border-bottom: 2px solid #4fc3f7; /* Лінія під текстом */
+    margin-bottom: 20px;
+}
+
+/* --- СТИЛЬ КНОПОК --- */
+QPushButton {
+    background-color: #1e88e5; /* Синій колір кнопки */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;       /* Заокруглені кути */
+    padding: 12px;            /* Відступи всередині кнопки */
+    border: 1px solid #1565c0;
+    min-width: 200px;         /* Мінімальна ширина */
+}
+
+/* --- КОЛИ НАВОДИШ МИШКОЮ --- */
+QPushButton:hover {
+    background-color: #42a5f5; /* Стає світлішою */
+    border: 1px solid #64b5f6;
+}
+
+/* --- КОЛИ НАТИСКАЄШ --- */
+QPushButton:pressed {
+    background-color: #0d47a1; /* Стає темною */
+    padding-top: 14px;         /* Ефект вдавлювання */
+    padding-left: 14px;
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>341</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Лабораторна робота №2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Завдання 2 (Число)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>Завдання 15 (Градуси)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Завдання 20 (Час доби)</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

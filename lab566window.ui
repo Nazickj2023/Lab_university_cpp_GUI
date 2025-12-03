@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>548</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #3e2723; /* Темно-коричневий */
+    color: #ffecb3;            /* Світло-золотий */
+    font-family: &quot;Garamond&quot;, serif; /* Шрифт з засічками (схожий на старинний) */
+    font-size: 14px;
+}
+
+QGroupBox {
+    border: 2px solid #d7ccc8;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 5px;
+    color: #ffca28; /* Золотий заголовок */
+}
+
+QPushButton {
+    background-color: #ff6f00; /* Янтарний */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #e65100;
+}
+
+QPushButton:hover {
+    background-color: #ffa000;
+}
+
+QSpinBox, QLineEdit {
+    background-color: #5d4037;
+    color: white;
+    border: 1px solid #8d6e63;
+    padding: 5px;
+}
+
+QLabel#lblRomanResult, QLabel#lblPalinResult {
+    font-size: 16px;
+    font-weight: bold;
+    color: #69f0ae; /* Зелений для результату */
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>120</y>
+     <width>111</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Завдання 2: з арабської на римську</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Введіть номер:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinNum">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>3999</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnConvert">
+        <property name="text">
+         <string>конвертувати</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblRomanResult">
+        <property name="text">
+         <string>Результат:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>130</y>
+     <width>142</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Завдання 9: Паліндром рядка</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Введіть текст:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtPalindrome"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCheck">
+        <property name="text">
+         <string>Перевірте</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblPalinResult">
+        <property name="text">
+         <string>Результат:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Лабораторна робота №5</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
